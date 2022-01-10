@@ -1,0 +1,16 @@
+<div *ngIf="villain">
+  <!-- Binding with TitleCasePipe -->
+  <h2>{{ villain.name | titlecase }} Details</h2>
+  <div><span>ID: </span>{{ villain.id }}</div>
+
+  <div>
+    <label for="villain-name">Villain name: </label>
+    <input
+      id="villain-name"
+      [(ngModel)]="villain.name"
+      placeholder="enter name"
+    />
+  </div>
+</div>
+
+<button (click)="goBack()">Back</button>

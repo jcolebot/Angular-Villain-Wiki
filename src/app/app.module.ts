@@ -1,14 +1,25 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
+import { VillainsComponent } from './villains/villains.component';
+import { FormsModule } from '@angular/forms'; //getting NgModel
+import { VillainDetailComponent } from './villain-detail/villain-detail.component';
+import { MessagesComponent } from './messages/messages.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component'; 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    VillainsComponent,
+    VillainDetailComponent,
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global styles go here */
+h1 {
+  color: #333;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 250%;
+}
+
+h2,
+h3 {
+  color: #753188;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: lighter;
+}
+
+body {
+  margin: 2rem;
+}
+
+body,
+input[type="text"],
+button {
+  color: #2c272e;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* Everything else */
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

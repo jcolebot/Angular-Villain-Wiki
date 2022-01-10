@@ -1,0 +1,10 @@
+<h2>My Villains</h2>
+<ul class="villains">
+  <!-- ngFor = repeater directive to loop through villain list -->
+  <li *ngFor="let villain of villains">
+    <!-- Using routerLink instead of href to prevent page refresh -->
+    <a routerLink="/detail/{{ villain.id }}">
+      <span class="badge">{{ villain.id }}</span> {{ villain.name | titlecase }}
+    </a>
+  </li>
+</ul>
